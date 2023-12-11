@@ -19,3 +19,7 @@ When scraping a webpage efficiently, you need to consider several factors such a
 
 **Politeness:**
 * **Definition:** Politeness, in the context of web scraping, refers to adhering to ethical guidelines and showing respect to the website and its resources.
+* **Respect robots.txt:** Follow the directives in the `robots.txt` file, which may include `crawl delay` and `other rules`.
+  * **User-Agent:** Use a proper and descriptive `User-Agent` in `HTTP headers` to **identify** the web crawler. This helps websites understand the nature of the bot and may prevent blocking.
+  * **Avoid Overloading:** Limit the number of requests to avoid overloading the server. This includes respecting any specified crawl delay.
+  * **Error Handling:** Implement error handling to gracefully handle issues such as `timeouts`, `connection errors`, or unexpected changes in the `website's structure`.
