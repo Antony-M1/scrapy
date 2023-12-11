@@ -43,6 +43,8 @@ By adhering to crawl delay and politeness guidelines, web scrapers can access da
 Depth-First Crawling and Breadth-First Crawling are two different strategies used in web crawling to determine the order in which pages are visited. Each strategy has its own advantages and use cases, and the choice between them depends on the specific goals of the web scraping project.
 
 ### Depth-First Crawling:
+![image](https://github.com/Antony-M1/scrapy/assets/96291963/610aabd2-3f77-43e8-bafb-7c25dc969994)
+
 
 - **Definition:**
   - In depth-first crawling, the crawler starts from the initial or seed URL and explores as far as possible along each branch of the website's link structure before backtracking. It prioritizes going deeper into the site before visiting other branches.
@@ -59,11 +61,10 @@ Depth-First Crawling and Breadth-First Crawling are two different strategies use
   - **May Miss Important Pages:** Since it prioritizes depth, it might miss important pages on other branches of the website.
 
 ### Breadth-First Crawling:
+![image](https://github.com/Antony-M1/scrapy/assets/96291963/3c240736-f112-4d43-8d9e-793fb3131b5c)
 
 - **Definition:**
   - In breadth-first crawling, the crawler starts from the initial URL and systematically visits all pages at the current depth level before moving on to the next level. It explores the website layer by layer.
-  -  ![image](https://github.com/Antony-M1/scrapy/assets/96291963/3c240736-f112-4d43-8d9e-793fb3131b5c)
-
 
 - **Characteristics:**
   - **[Breadth-First Search (BFS):](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)** The algorithm is similar to a breadth-first search traversal in graph theory.
