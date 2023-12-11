@@ -261,7 +261,7 @@ By implementing incremental scraping, developers can keep their datasets up-to-d
 
 <summary><h3>Parallel processing</h3></summary>
  
-Parallel processing in the context of web scraping refers to the concurrent execution of multiple scraping tasks to improve efficiency and reduce the overall time required to scrape a large amount of data. This approach takes advantage of the parallelism available in modern computing systems, allowing multiple tasks to be performed simultaneously.
+Parallel processing in the context of web scraping refers to the `concurrent execution` of multiple scraping tasks to improve efficiency and reduce the overall time required to scrape a large amount of data. This approach takes advantage of the `parallelism` available in modern computing systems, allowing multiple tasks to be performed simultaneously.
 
 ### Key Concepts:
 
