@@ -5,8 +5,9 @@ When scraping a webpage efficiently, you need to consider several factors such a
 * [Crawl Delay and Politeness]()
 
 ---
-
-## Crawl Delay and Politeness
+<details>
+<summary><h2>Crawl Delay and Politeness</h2></summary>
+ 
 `Crawl Delay` and `Politeness` refer to strategies employed in web scraping to ensure that bots (web crawlers or spiders) behave in a respectful and considerate manner towards the websites they are accessing. These strategies are essential to prevent overloading servers with too many requests, which could lead to server strain, increased server costs, or even IP blocking by the website.
 
 **Crawl Delay:**
@@ -23,3 +24,4 @@ When scraping a webpage efficiently, you need to consider several factors such a
   * **User-Agent:** Use a proper and descriptive `User-Agent` in `HTTP headers` to **identify** the web crawler. This helps websites understand the nature of the bot and may prevent blocking.
   * **Avoid Overloading:** Limit the number of requests to avoid overloading the server. This includes respecting any specified crawl delay.
   * **Error Handling:** Implement error handling to gracefully handle issues such as `timeouts`, `connection errors`, or unexpected changes in the `website's structure`.
+</details>
