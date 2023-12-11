@@ -181,3 +181,78 @@ div.article > h2.title
 By employing efficient selectors, web scraping code becomes more reliable, adaptable, and performs better, ensuring a smoother scraping process even when websites are updated or modified.
 </details>
 
+<details>
+ <summary><h3>Incremental scraping</h3></summary>
+ 
+`Incremental scraping` is a technique used in web scraping to update a dataset with only the `new` or `modified data` since the last scrape. Instead of re-scraping the entire website, incremental scraping focuses on `fetching` and `extracting` only the information that has changed or is new, saving time and resources. This approach is particularly useful for large websites where scraping the entire content frequently may be impractical.
+
+### Key Concepts:
+
+1. **Timestamps or Identifiers:**
+   - To implement incremental scraping, each item on the website needs to have a timestamp or some form of identifier that indicates when it was last updated. This could be a modification timestamp, a version number, or any unique identifier.
+
+2. **Tracking Changes:**
+   - The scraper compares the timestamps or identifiers of items on the website with the timestamps recorded during the previous scrape.
+   - Items with newer timestamps or different identifiers are considered new or modified, and their data is fetched.
+
+3. **Storing State:**
+   - To keep track of the state between scrapes, the scraper needs to store the timestamp or identifier of the most recently scraped data. This information is used as a reference point during the next scrape.
+
+4. **Fetching Only Changes:**
+   - Only the items that have changed since the last scrape are retrieved, reducing the amount of data transferred and processed.
+
+### Example Workflow:
+
+1. **Initial Scrape:**
+   - The scraper initially scrapes the entire website and records the timestamps or identifiers of each item.
+
+2. **Subsequent Scrape:**
+   - During subsequent scrapes, the scraper compares the current timestamps or identifiers with those recorded in the previous scrape.
+
+3. **Identifying Changes:**
+   - Items with newer timestamps or different identifiers are identified as changed or new.
+
+4. **Fetching New Data:**
+   - Only the data associated with the changed or new items is fetched, reducing the workload compared to scraping the entire website.
+
+5. **Updating State:**
+   - After completing the scrape, the scraper updates its stored state with the current timestamps or identifiers for future comparisons.
+
+### Benefits of Incremental Scraping:
+
+1. **Efficiency:**
+   - Saves time and resources by fetching only the data that has changed.
+
+2. **Reduced Server Load:**
+   - Decreases the load on both the scraper and the server by minimizing the amount of data transferred.
+
+3. **Faster Updates:**
+   - Enables more frequent updates since the workload is reduced.
+
+4. **Minimized Impact:**
+   - Websites are less likely to detect and block the scraper if it is making fewer requests.
+
+### Considerations:
+
+1. **Website Support:**
+   - Not all websites provide timestamps or identifiers for their items. Incremental scraping relies on the availability of such information.
+
+2. **Robustness:**
+   - The scraper needs to handle cases where timestamps or identifiers are not consistently provided or may change unexpectedly.
+
+3. **Data Integrity:**
+   - The technique assumes that the timestamps or identifiers accurately reflect changes. If this is not the case, incremental scraping may lead to missing or incorrect data.
+
+### Best Practices:
+
+1. **Use Reliable Identifiers:**
+   - Ensure that the timestamps or identifiers used for incremental scraping are reliable and consistent.
+
+2. **Handle Data Drift:**
+   - Be prepared to handle cases where the structure or identifiers of items change over time.
+
+3. **Regular Monitoring:**
+   - Regularly monitor and adjust the scraper to handle any changes in the website's structure or data representation.
+
+By implementing incremental scraping, developers can keep their datasets up-to-date with minimal impact on server resources and a reduced risk of being blocked by the website.
+</details>
