@@ -48,7 +48,7 @@ Depth-First Crawling and Breadth-First Crawling are two different strategies use
   - In depth-first crawling, the crawler starts from the initial or seed URL and explores as far as possible along each branch of the website's link structure before backtracking. It prioritizes going deeper into the site before visiting other branches.
 
 - **Characteristics:**
-  - **Depth-First Search (DFS):** The algorithm is similar to a depth-first search traversal in graph theory.
+  - **[Depth-First Search (DFS):](https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/)** The algorithm is similar to a depth-first search traversal in graph theory.
   - **Stack Data Structure:** Implemented using a stack to keep track of URLs to be visited.
 
 - **Advantages:**
@@ -62,9 +62,11 @@ Depth-First Crawling and Breadth-First Crawling are two different strategies use
 
 - **Definition:**
   - In breadth-first crawling, the crawler starts from the initial URL and systematically visits all pages at the current depth level before moving on to the next level. It explores the website layer by layer.
+  - ![image](https://github.com/Antony-M1/scrapy/assets/96291963/3c240736-f112-4d43-8d9e-793fb3131b5c)
+
 
 - **Characteristics:**
-  - **Breadth-First Search (BFS):** The algorithm is similar to a breadth-first search traversal in graph theory.
+  - **[Breadth-First Search (BFS):](https://www.geeksforgeeks.org/breadth-first-search-or-bfs-for-a-graph/)** The algorithm is similar to a breadth-first search traversal in graph theory.
   - **Queue Data Structure:** Implemented using a queue to manage the order of URLs to be visited.
 
 - **Advantages:**
