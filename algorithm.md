@@ -61,8 +61,7 @@ Depth-First Crawling and Breadth-First Crawling are two different strategies use
 ### Breadth-First Crawling:
 
 - **Definition:**
-  - In breadth-first crawling, the crawler starts from the initial URL and systematically visits all pages at the current depth level before moving on to the next level. It explores the website layer by layer.
-  - ![image](https://github.com/Antony-M1/scrapy/assets/96291963/3c240736-f112-4d43-8d9e-793fb3131b5c)
+  - In breadth-first crawling, the crawler starts from the initial URL and systematically visits all pages at the current depth level before moving on to the next level. It explores the website layer by layer. ![image](https://github.com/Antony-M1/scrapy/assets/96291963/3c240736-f112-4d43-8d9e-793fb3131b5c)
 
 
 - **Characteristics:**
