@@ -14,3 +14,8 @@ When scraping a webpage efficiently, you need to consider several factors such a
 * **Purpose:**
   * **Resource Conservation:** Helps conserve server resources by spacing out requests over time.
   * **Avoiding Overload:** Prevents overloading the server, especially for websites with limited bandwidth or shared hosting.
+* **Implementation:**
+  * Webmasters may specify a crawl delay in the `robots.txt` file using the `Crawl-delay` directive. For example: Crawl-delay: 5 indicates a delay of `5 seconds` between requests.
+
+**Politeness:**
+* **Definition:** Politeness, in the context of web scraping, refers to adhering to ethical guidelines and showing respect to the website and its resources.
