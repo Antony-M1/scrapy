@@ -9,6 +9,23 @@ The main motto of this document is to get knowledge from the different sources a
 # [Architecture](https://docs.scrapy.org/en/latest/topics/architecture.html)
 ![image](https://github.com/Antony-M1/scrapy/assets/96291963/888ab328-7c5f-4790-89ad-1296c7c000f2)
 
+# [Default structure of Scrapy projects](https://docs.scrapy.org/en/latest/topics/commands.html#default-structure-of-scrapy-projects)
+
+```
+scrapy.cfg
+myproject/
+    __init__.py
+    items.py
+    middlewares.py
+    pipelines.py
+    settings.py
+    spiders/
+        __init__.py
+        spider1.py
+        spider2.py
+        ...
+```
+
 
 # Table Of Content
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
