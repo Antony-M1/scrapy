@@ -14,8 +14,3 @@ The main motto of this document is to get knowledge from the different sources a
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
 * [Library](https://github.com/Antony-M1/scrapy/blob/main/library.md)
 
-<video width="320" height="240" controls>
-  <source src="https://youtu.be/mBoX_JCKZTE" type="video/mp4">
-  <source src="https://youtu.be/mBoX_JCKZTE" type="video/ogg">
-  Your browser does not support the video tag.
-</video>
