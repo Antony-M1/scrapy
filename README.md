@@ -26,6 +26,27 @@ myproject/
         ...
 ```
 
+# VS-Code Debugger
+Past this in `.vscode/launch.json` file
+```
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Scrapy",
+      "type": "python",
+      "request": "launch",
+      "module": "scrapy",
+      "args": ["runspider", "${file}"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}
+
+
+```
+
 
 # Table Of Content
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
