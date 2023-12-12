@@ -49,4 +49,5 @@ Past this in `.vscode/launch.json` file
 # Table Of Content
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
 * [Library](https://github.com/Antony-M1/scrapy/blob/main/library.md)
+* [Commands](https://github.com/Antony-M1/scrapy/blob/main/commands.md)
 
