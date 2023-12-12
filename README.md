@@ -50,4 +50,5 @@ Past this in `.vscode/launch.json` file
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
 * [Library](https://github.com/Antony-M1/scrapy/blob/main/library.md)
 * [Commands](https://github.com/Antony-M1/scrapy/blob/main/commands.md)
+* [Spider](https://github.com/Antony-M1/scrapy/blob/main/spider.md)
 
