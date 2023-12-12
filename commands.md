@@ -42,9 +42,7 @@ Use "scrapy <command> -h" to see more info about a command
   --pdb                 enable pdb on failure
 ```
 
-<details>
-  <summary><b>Template</b></summary>
-</details>
+
 
 <details>
   <summary><b>scrapy bench</b></summary>
@@ -128,4 +126,134 @@ Options
 
 ```
 </details>
+
+<details>
+  <summary><b>scrapy settings</b></summary>
+  Get settings values
+
+  ```
+  scrapy settings --help
+  ```
+output
+```
+Usage
+=====
+  scrapy settings [options]
+
+Get settings values
+
+Options
+=======
+  -h, --help            show this help message and exit
+  --get SETTING         print raw setting value
+  --getbool SETTING     print setting value, interpreted as a boolean
+  --getint SETTING      print setting value, interpreted as an integer
+  --getfloat SETTING    print setting value, interpreted as a float
+  --getlist SETTING     print setting value, interpreted as a list
+```
+</details>
+
+
+<details>
+  <summary><b>scrapy shell</b></summary>
+
+```
+scrapy shell --help
+```
+Output
+```
+Usage
+=====
+  scrapy shell [url|file]
+
+Interactive console for scraping the given url or file. Use ./file.html syntax or full path for local
+file.
+
+Options
+=======
+  -h, --help            show this help message and exit
+  -c CODE               evaluate the code in the shell, print the result and exit
+  --spider SPIDER       use this spider
+  --no-redirect         do not handle HTTP 3xx status codes and print response as-is
+```
+</details>
+
+
+<details>
+  <summary><b>scrapy startproject</b></summary>
+
+  Create new project
+
+```
+scrapy startproject --help
+```
+Output
+```
+Usage
+=====
+  scrapy startproject <project_name> [project_dir]
+
+Create new project
+
+Options
+=======
+  -h, --help            show this help message and exit
+```
+</details>
+
+
+<details>
+  <summary><b>scrapy version</b></summary>
+
+  ```
+scrapy version --hep
+```
+Output
+
+```
+Usage
+=====
+  scrapy version [-v]
+
+Print Scrapy version
+
+Options
+=======
+  -h, --help            show this help message and exit
+  --verbose, -v         also display twisted/python/platform info (useful for bug reports)
+```
+</details>
+
+
+<details>
+  <summary><b>scrapy view</b></summary>
+Fetch a URL using the Scrapy downloader and show its contents in a browser
+
+```
+scrapy view --help
+```
+Output
+```
+Usage
+=====
+  scrapy view [options] <url>
+
+Fetch a URL using the Scrapy downloader and show its contents in a browser
+
+Options
+=======
+  -h, --help            show this help message and exit
+  --spider SPIDER       use this spider
+  --no-redirect         do not handle HTTP 3xx status codes and print response as-is
+```
+</details>
+
+
+
+
+
+
+
+
+
 
