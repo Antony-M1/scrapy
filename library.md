@@ -92,6 +92,138 @@ This library also provides support for `Unicode Technical Standard 46`, Unicode 
 This acts as a suitable replacement for the `encodings.idna` module that comes with the Python standard library, but which only supports the older superseded IDNA specification (RFC 3490).
 </details>
 
+<details>
+  <summary><b><a href="https://pypi.org/project/incremental/">incremental</a></b></summary>
+
+Incremental is a small library that versions your Python projects.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/itemadapter/">itemadapter</a></b></summary>
+
+The ItemAdapter class is a `wrapper` for data container objects, providing a common interface to handle objects of different types uniformly, regardless of their underlying implementation.
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/itemloaders/">itemloaders</a></b></summary>
+
+`itemloaders` is a library that helps you collect data from `HTML`and `XML` sources.
+
+It comes in handy to extract data from web pages, as it supports data extraction using `CSS` and `XPath` Selectors.
+
+It’s specially useful when you need to standardize the data from many sources. For example, it allows you to have all your casting and parsing rules in a single place.
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/jmespath/">jmespath</a></b></summary>
+
+`itemloaders` is a library that helps you collect data from `HTML`and `XML` sources.
+
+JMESPath (pronounced “james path”) allows you to declaratively specify how to extract elements from a `JSON` document.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/lxml/">lxml</a></b></summary>
+
+`lxml` is a `Pythonic`, mature binding for the `libxml2` and `libxslt` libraries. It provides safe and convenient access to these libraries using the `ElementTree` API.
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/packaging/">packaging</a></b></summary>
+
+This library provides utilities that implement the interoperability specifications which have clearly one correct behaviour (eg: PEP 440) or benefit greatly from having a single shared implementation (eg: PEP 425).
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/parsel/">parsel</a></b></summary>
+
+Parsel is a BSD-licensed Python library to extract data from HTML, JSON, and XML documents.
+
+It supports:
+
+* CSS and XPath expressions for `HTML` and `XML` documents
+
+* JMESPath expressions for `JSON` documents
+
+* Regular expressions
+
+Find the `Parsel` online documentation at https://parsel.readthedocs.org.
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/Protego/">Protego</a></b></summary>
+
+Protego is a pure-Python `robots.txt` parser with support for modern conventions.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/pyasn1/">pyasn1</a></b></summary>
+
+This is a free and open source implementation of `ASN.1` types and codecs as a Python package. It has been first written to support particular protocol `(SNMP)` but then generalized to be suitable for a wide range of protocols based on `ASN.1` specification.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/pyasn1-modules/">pyasn1-modules</a></b></summary>
+
+The pyasn1-modules package contains a collection of `ASN.1` data structures expressed as Python classes based on `pyasn1` data model.
+
+If `ASN.1` module you need is not present in this collection, try using `Asn1ate` tool that compiles `ASN.1` documents into `pyasn1` code.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/pyasn1-modules/">pyasn1-modules</a></b></summary>
+
+The pyasn1-modules package contains a collection of `ASN.1` data structures expressed as Python classes based on `pyasn1` data model.
+
+If `ASN.1` module you need is not present in this collection, try using `Asn1ate` tool that compiles `ASN.1` documents into `pyasn1` code.
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/pycparser/">pyasn1-modules</a></b></summary>
+  
+`pycparser` is a complete parser of the `C` language, written in
+pure Python using the `PLY` parsing library. It parses C code into an `AST` and can serve as a `front-end` for `C` compilers or analysis tools.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/PyDispatcher/">PyDispatcher</a></b></summary>
+  
+`PyDispatcher` provides the Python programmer with a `multiple-producer-multiple-consumer` `signal-registration` and routing infrastructure for use in multiple contexts. The mechanism of PyDispatcher started life as a highly-rated recipe in the Python `Cookbook`. The project aims to include various enhancements to the recipe developed during use in various applications. It is primarily maintained by Mike Fletcher. A derivative of the project provides the `Django` web framework's **signal** system.
+</details>
+
+
+<details>
+  <summary><b><a href="https://pypi.org/project/pyOpenSSL/">pyOpenSSL</a></b></summary>
+  
+`High-level` wrapper around a subset of the OpenSSL library. Includes
+
+* SSL.Connection objects, wrapping the methods of Python’s portable sockets
+
+* Callbacks written in Python
+
+* Extensive error-handling mechanism, mirroring OpenSSL’s error codes
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
