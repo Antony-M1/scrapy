@@ -8,3 +8,4 @@ The main motto of this document is to get knowledge from the different sources a
 
 # Table Of Content
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
+* [Library](https://github.com/Antony-M1/scrapy/blob/main/library.md)
