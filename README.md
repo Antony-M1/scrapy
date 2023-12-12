@@ -6,3 +6,5 @@ Scrapy is a fast high-level **web crawling** and **web scraping** framework, use
 # Summary
 The main motto of this document is to get knowledge from the different sources and documentation. In this repo you can find lots of documents regarding the scrappy and efficient way to scrap a page handle the data and store the data.
 
+# Table Of Content
+* [Algoritham](/aloritham)
