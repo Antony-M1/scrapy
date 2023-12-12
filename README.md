@@ -6,6 +6,10 @@ Scrapy is a fast high-level **web crawling** and **web scraping** framework, use
 # Summary
 The main motto of this document is to get knowledge from the different sources and documentation. In this repo you can find lots of documents regarding the scrappy and efficient way to scrap a page handle the data and store the data.
 
+# [Architecture](https://docs.scrapy.org/en/latest/topics/architecture.html)
+![image](https://github.com/Antony-M1/scrapy/assets/96291963/888ab328-7c5f-4790-89ad-1296c7c000f2)
+
+
 # Table Of Content
 * [Algoritham](https://github.com/Antony-M1/scrapy/blob/main/algorithm.md)
 * [Library](https://github.com/Antony-M1/scrapy/blob/main/library.md)
