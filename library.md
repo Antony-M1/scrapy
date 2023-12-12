@@ -211,26 +211,99 @@ pure Python using the `PLY` parsing library. It parses C code into an `AST` and 
 </details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/queuelib/">queuelib</a></b></summary>
+  
+* `Queuelib` is a Python library that implements object collections which are stored in `memory` or `persisted to disk`, provide a `simple` API, and run fast.
+* `Queuelib` provides collections for `queues` (FIFO), `stacks` (LIFO), queues sorted by priority and queues that are emptied in a `round-robin fashion`.
+
+**Note**
+* Queuelib collections are not thread-safe.
+* Queuelib supports Python 3.5+ and has no dependencies.
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/requests/">requests</a></b></summary>
+  
+Requests allows you to send `HTTP/1.1` requests extremely easily. There’s no need to manually add query strings to your URLs, or to `form-encode` your `PUT` & `POST` data — but nowadays, just use the `json` method!
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/requests-file/">requests-file</a></b></summary>
+  
+The `requests-file` library is a third-party Python library that provides support for making `HTTP` requests to **local** files using the requests library. It allows you to use the familiar requests API for making HTTP requests, even when the target resource is a `local file` rather than a `remote server`.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/service-identity/">service-identity</a></b></summary>
+  
+Service Identity Verification for `pyOpenSSL` & `cryptography`
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/six/">six</a></b></summary>
+  
+Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/tldextract/#:~:text=tldextract%205.1.,1&text=Accurately%20separates%20a%20URL's%20subdomain,List's%20private%20domains%20as%20well.">tldextract</a></b></summary>
+  
+`tldextract` accurately separates a URL's `subdomain`, `domain`, and `public suffix`, using the Public Suffix List (PSL).
+
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/Twisted/">Twisted</a></b></summary>
+  
+`Twisted` is an `event-based framework` for `internet applications`, supporting Python 3.6+. It includes modules for many different purposes, including the following:
+
+* `twisted.web:` HTTP clients and servers, HTML templating, and a WSGI server
+* `twisted.conch:` SSHv2 and Telnet clients and servers and terminal emulators
+* `twisted.words:` Clients and servers for IRC, XMPP, and other IM protocols
+* `twisted.mail:` IMAPv4, POP3, SMTP clients and servers
+* `twisted.positioning:` Tools for communicating with NMEA-compatible GPS receivers
+* `twisted.names:` DNS client and tools for making your own DNS servers
+* `twisted.trial:` A unit testing framework that integrates well with Twisted-based code.
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/typing-extensions/">typing-extensions</a></b></summary>
+  
+The `typing_extensions` module serves two related purposes:
+
+* Enable use of new type system features on older Python versions. For example, `typing.TypeGuard` is new in Python 3.10, but `typing_extensions` allows users on previous Python versions to use it too.
+* Enable experimentation with new type system `PEPs` before they are accepted and added to the typing module.
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/urllib3/">urllib3</a></b></summary>
+  
+urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries.
+</details>
+
+<details>
+  <summary><b><a href="https://pypi.org/project/w3lib/">w3lib</a></b></summary>
+  
+The w3lib library is a utility library in Python that provides a collection of commonly needed functions for working with URLs and web-related tasks.
+</details>
 
 
+<details>
+  <summary><b><a href="https://pypi.org/project/zope.interface/">zope.interface</a></b></summary>
+  
+This package is intended to be independently reusable in any Python project. It is maintained by the `Zope Toolkit` project.
 
+This package provides an implementation of `object interfaces` for Python. Interfaces are a mechanism for labeling objects as conforming to a given API or contract. So, this package can be considered as implementation of the Design By Contract methodology support in Python.
+</details>
 
-
-
-
-
+---
 
 
 
