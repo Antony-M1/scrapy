@@ -43,8 +43,6 @@ Past this in `.vscode/launch.json` file
     }
   ]
 }
-
-
 ```
 
 
