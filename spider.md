@@ -18,13 +18,14 @@ This is the basic format of the spider. you can see.
 
 # Class
 <details>
-<summary><h3>scrapy.Spider</h3></summary>
+<summary><h3><a href="https://docs.scrapy.org/en/latest/topics/spiders.html#scrapy-spider">scrapy.Spider</a></h3></summary>
     
 Base class for scrapy spiders. All spiders must inherit from this class.
 
 **Attributes**
-* **name:** `str`  identifies the Spider. It must be unique within a project, that is, you can’t set the same name for different Spiders.
-* **custom_settings:** `Optional[dict] = None`
+* `name: str`  identifies the Spider. It must be unique within a project, that is, you can’t set the same name for different Spiders.
+* `custom_settings: Optional[dict] = None`
+* `start_urls: list` If you used this attribute you no need to use the `start_request()` method.
 
 **Methods**
 * `start_requests():` must return an iterable of Requests (you can return a list of requests or write a generator function) which the Spider will begin to crawl from. Subsequent requests will be generated successively from these initial requests.
