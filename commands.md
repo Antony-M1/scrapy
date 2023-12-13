@@ -249,6 +249,31 @@ Options
 </details>
 
 
+<details>
+  <summary><b>scrapy crawl</b></summary>
+
+  ```
+Usage
+=====
+  scrapy crawl [options] <spider>
+
+Run a spider
+
+Options
+=======
+  -h, --help            show this help message and exit
+  -a NAME=VALUE         set spider argument (may be repeated)
+  -o FILE, --output FILE
+                        append scraped items to the end of FILE (use - for stdout), to define format set a colon
+                        at the end of the output URI (i.e. -o FILE:FORMAT)
+  -O FILE, --overwrite-output FILE
+                        dump scraped items into FILE, overwriting any existing file, to define format set a
+                        colon at the end of the output URI (i.e. -O FILE:FORMAT)
+  -t FORMAT, --output-format FORMAT
+                        format to use for dumping items
+```
+
+</details>
 
 
 
