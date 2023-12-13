@@ -15,3 +15,23 @@ This is the basic format of the spider. you can see.
 
 ### Methods
 * **parse(self, response)** in the `response` contains the response object from there you can do the needed logics
+
+# Class
+<details>
+<summary><h3>scrapy.Spider</h3></summary>
+    
+Base class for scrapy spiders. All spiders must inherit from this class.
+
+**Attributes**
+* **name:** `str`
+* **custom_settings:** `Optional[dict] = None`
+
+</details>
+
+<details>
+    <summary><h3>scrapy.Request</h3></summary>
+
+Represents an HTTP request, which is usually generated in a Spider and
+    executed by the Downloader, thus generating a :class:`Response`.
+    
+</details>
