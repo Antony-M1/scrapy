@@ -309,4 +309,335 @@ Yes, there is at least one match!
 </details>
 
 
+## Special Sequences
+A special sequence is a `\` followed by one of the characters in the list below, and has a special meaning:
 
+<details>
+  <summary><b><code>\A</code></b> Returns a match if the specified characters are at the beginning of the string	</summary>
+
+  This is same like `^` Starts with
+
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string starts with "The":
+
+x = re.findall("\AThe", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is a match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['The']
+Yes, there is a match!
+```
+</details>
+
+
+
+<details>
+  <summary><b><code>\b</code></b> Returns a match where the specified characters are at the beginning or at the end of a word
+(the "r" in the beginning is making sure that the string is being treated as a "raw string")</summary>
+
+Example 1
+```
+import re
+
+txt = "The rain in Spain"
+
+#Check if "ain" is present at the beginning of a WORD:
+
+x = re.findall(r"\bain", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+[]
+No match
+```
+
+Example 2
+```
+import re
+
+txt = "The rain in Spain"
+
+#Check if "ain" is present at the end of a WORD:
+
+x = re.findall(r"ain\b", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['ain', 'ain']
+Yes, there is at least one match!
+```
+</details>
+
+
+<details>
+  <summary><b><code>\B</code></b> 	Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
+(the "r" in the beginning is making sure that the string is being treated as a "raw string")	</summary>
+
+  Example 1
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Check if "ain" is present, but NOT at the beginning of a word:
+
+x = re.findall(r"\Bain", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['ain', 'ain']
+Yes, there is at least one match!
+```
+
+Example 2
+```
+import re
+
+txt = "The rain in Spain"
+
+#Check if "ain" is present, but NOT at the end of a word:
+
+x = re.findall(r"ain\B", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+[]
+No match
+```
+</details>
+
+<details>
+  <summary><b><code>\d</code></b> Returns a match where the string contains digits (numbers from 0-9)		</summary>
+
+```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string contains any digits (numbers from 0-9):
+
+x = re.findall("\d", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+[]
+No match
+```
+</>
+
+
+
+<details>
+  <summary><b><code>\D</code></b> 	Returns a match where the string DOES NOT contain digits</summary>
+
+```
+import re
+
+txt = "Hello World"
+
+#Return a match at every no-digit character:
+
+x = re.findall("\D", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd']
+Yes, there is at least one match!
+```
+</details>
+
+
+<details>
+  <summary><b><code>\s</code></b> 	Returns a match where the string contains a white space character</summary>
+
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Return a match at every white-space character:
+
+x = re.findall("\s", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+[' ', ' ', ' ']
+Yes, there is at least one match!
+```
+</details>
+
+
+
+<details>
+  <summary><b><code>\S</code></b> 		Returns a match where the string DOES NOT contain a white space character</summary>
+
+  ```
+import re
+
+txt = "Hello World"
+
+#Return a match at every NON white-space character:
+
+x = re.findall("\S", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['H', 'e', 'l', 'l', 'o', 'W', 'o', 'r', 'l', 'd']
+Yes, there is at least one match!
+```
+</details>
+
+
+<details>
+  <summary><b><code>\w</code></b> 	Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)</summary>
+
+```
+import re
+
+txt = "The rain in Spain"
+
+#Return a match at every word character (characters from a to Z, digits from 0-9, and the underscore _ character):
+
+x = re.findall("\w", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+
+Output
+```
+
+['T', 'h', 'e', 'r', 'a', 'i', 'n', 'i', 'n', 'S', 'p', 'a', 'i', 'n']
+Yes, there is at least one match!
+```
+</details>
+
+
+<details>
+  <summary><b><code>\W</code></b> 	Returns a match where the string DOES NOT contain any word characters</summary>
+
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Return a match at every NON word character (characters NOT between a and Z. Like "!", "?" white-space etc.):
+
+x = re.findall("\W", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+[' ', ' ', ' ']
+Yes, there is at least one match!
+```
+</details>
+
+
+<details>
+  <summary><b><code>\Z</code></b> Returns a match if the specified characters are at the end of the string</summary>
+
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string ends with "Spain":
+
+x = re.findall("Spain\Z", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is a match!")
+else:
+  print("No match")
+```
+Output
+```
+['Spain']
+Yes, there is a match!
+```
+</details>
