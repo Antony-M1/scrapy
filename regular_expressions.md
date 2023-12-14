@@ -647,8 +647,220 @@ Yes, there is a match!
 </details>
 
 ## Sets
-A set is a set of characters inside a pair of square brackets `[]` with a special meaning:
+A set is a set of characters inside a pair of square brackets `[]` with a special meaning.
+
 <details>
-  <summary><b><code>\Z</code></b> Returns a match if the specified characters are at the end of the string</summary>
+  <summary><b><code>[arn]</code></b> Returns a match where one of the specified characters (a, r, or n) is present</summary>
+
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string has any a, r, or n characters:
+
+x = re.findall("[arn]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['r', 'a', 'n', 'n', 'a', 'n']
+Yes, there is at least one match!
+```
 </details>
+
+
+<details>
+  <summary><b><code>[a-n]</code></b> Returns a match for any lower case character, alphabetically between <code>a</code> and <code>n</code></summary>
+
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string has any characters between a and n:
+
+x = re.findall("[a-n]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['h', 'e', 'a', 'i', 'n', 'i', 'n', 'a', 'i', 'n']
+Yes, there is at least one match!
+```
+</details>
+
+
+
+
+<details>
+  <summary><b><code>[^arn]</code></b> Returns a match for any character EXCEPT <code>a</code>, <code>r</code>, and <code>n</code> </summary>
+
+```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string has other characters than a, r, or n:
+
+x = re.findall("[^arn]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+['T', 'h', 'e', ' ', 'i', ' ', 'i', ' ', 'S', 'p', 'i']
+Yes, there is at least one match!
+```
+</details>
+
+
+
+
+<details>
+  <summary><b><code>[0123]</code></b> Returns a match where any of the specified digits (0, 1, 2, or 3) are present </summary>
+
+```
+import re
+
+txt = "The rain in Spain"
+
+#Check if the string has any 0, 1, 2, or 3 digits:
+
+x = re.findall("[0123]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+[]
+No match
+```
+</details>
+
+
+
+<details>
+  <summary><b><code>[0-9]</code></b> Returns a match for any digit between 0 and 9 </summary>
+
+```
+import re
+
+txt = "8 times before 11:45 AM"
+
+#Check if the string has any digits:
+
+x = re.findall("[0-9]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+['8', '1', '1', '4', '5']
+Yes, there is at least one match!
+```
+</details>
+
+
+
+<details>
+  <summary><b><code>[0-5][0-9]</code></b> Returns a match for any two-digit numbers from 00 and 59 </summary>
+
+```
+import re
+
+txt = "8 times before 11:45 AM"
+
+#Check if the string has any two-digit numbers, from 00 to 59:
+
+x = re.findall("[0-5][0-9]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+```
+Output
+```
+['11', '45']
+Yes, there is at least one match!
+```
+  
+</details>
+
+
+
+
+<details>
+  <summary><b><code>[a-zA-Z]</code></b> Returns a match for any character alphabetically between a and z, lower case OR upper case </summary>
+
+  ```
+import re
+
+txt = "8 times before 11:45 AM"
+
+#Check if the string has any characters from a to z lower case, and A to Z upper case:
+
+x = re.findall("[a-zA-Z]", txt)
+
+print(x)
+
+if x:
+  print("Yes, there is at least one match!")
+else:
+  print("No match")
+
+```
+Output
+```
+['t', 'i', 'm', 'e', 's', 'b', 'e', 'f', 'o', 'r', 'e', 'A', 'M']
+Yes, there is at least one match!
+```
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
