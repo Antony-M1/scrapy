@@ -308,6 +308,10 @@ Yes, there is at least one match!
 ```
 </details>
 
+<details>
+  <summary><b><code>()</code></b> 	Capture and group</summary>
+</details>
+
 
 ## Special Sequences
 A special sequence is a `\` followed by one of the characters in the list below, and has a special meaning:
@@ -642,4 +646,9 @@ Yes, there is a match!
 ```
 </details>
 
+## Sets
+A set is a set of characters inside a pair of square brackets `[]` with a special meaning:
+<details>
+  <summary><b><code>\Z</code></b> Returns a match if the specified characters are at the end of the string</summary>
+</details>
 
