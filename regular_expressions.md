@@ -94,3 +94,35 @@ Output
 The9rain9in9Spain
 ```
 </details>
+
+## Metacharacters
+Metacharacters are characters with a special meaning:
+
+<details>
+  <summary><b>[]</b></summary>
+
+  A set of characters
+
+  Example: `[a-m]`
+  ```
+import re
+
+txt = "The rain in Spain"
+
+#Find all lower case characters alphabetically between "a" and "m":
+
+x = re.findall("[a-m]", txt)
+print(x)
+```
+Output
+```
+['h', 'e', 'a', 'i', 'i', 'a', 'i']
+```
+</details>
+
+
+<details>
+  <summary><b>\</b></summary>
+  
+  Signals a special sequence (can also be used to escape special characters)	
+</details>
