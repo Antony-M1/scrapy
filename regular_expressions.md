@@ -124,5 +124,59 @@ Output
 <details>
   <summary><b>\</b></summary>
   
-  Signals a special sequence (can also be used to escape special characters)	
+  Signals a special sequence (can also be used to escape special characters)
+
+  ```
+import re
+
+txt = "That will be 59 dollars"
+
+#Find all digit characters:
+
+x = re.findall("\d", txt)
+print(x)
+```
+Output
+```
+['5', '9']
+```
+</details>
+
+
+<details>
+  <summary><b>.</b></summary>
+Any character (except newline character)	
+  
+  ```
+import re
+
+txt = "hello planet"
+
+#Search for a sequence that starts with "he", followed by two (any) characters, and an "o":
+
+x = re.findall("he..o", txt)
+print(x)
+```
+Output
+```
+['hello']
+```
+  
+</details>
+
+
+<details>
+  <summary><b>^</b></summary>
+
+  Start With
+```
+import re
+txt = "hello world"
+x = re.findall("^hello", txt)
+print(x)
+```
+Output
+```
+["hello"]
+```
 </details>
