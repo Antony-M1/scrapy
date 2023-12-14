@@ -99,9 +99,7 @@ The9rain9in9Spain
 Metacharacters are characters with a special meaning:
 
 <details>
-  <summary><b>[]</b></summary>
-
-  A set of characters
+  <summary><b><code>[]</code></b> A set of characters</summary>
 
   Example: `[a-m]`
   ```
@@ -122,10 +120,8 @@ Output
 
 
 <details>
-  <summary><b>\</b></summary>
+  <summary><b><code>\</code></b>   Signals a special sequence (can also be used to escape special characters)</summary>
   
-  Signals a special sequence (can also be used to escape special characters)
-
   ```
 import re
 
@@ -144,8 +140,7 @@ Output
 
 
 <details>
-  <summary><b>.</b></summary>
-Any character (except newline character)	
+  <summary><b><code>.</code></b> Any character (except newline character)	</summary>
   
   ```
 import re
@@ -166,9 +161,8 @@ Output
 
 
 <details>
-  <summary><b>^</b></summary>
+  <summary><b><code>^</code></b>   Start With</summary>
 
-  Start With
 ```
 import re
 txt = "hello world"
@@ -183,9 +177,8 @@ Output
 
 
 <details>
-  <summary><b>$</b></summary>
+  <summary><b><code>$</code></b>   Ends with</summary>
 
-  Ends with
 ```
 import re
 
@@ -200,9 +193,8 @@ Output
 </details>
 
 <details>
-  <summary><b>*</b></summary>
+  <summary><b><code>*</code></b>   Zero or more occurrences</summary>
 
-  Zero or more occurrences
 
 ```
 import re
@@ -224,9 +216,8 @@ Output
 
 
 <details>
-  <summary><b>+</b></summary>
+  <summary><b><code>+</code></b> One or more occurrences</summary>
 
-One or more occurrences
 ```
 import re
 
