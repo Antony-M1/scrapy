@@ -8,6 +8,7 @@ While perhaps not as popular as CSS selectors, XPath expressions offer more powe
 * [Learn XPath through examples](http://zvon.org/comp/r/tut-XPath_1.html)
     * [List of Xpath](http://zvon.org/comp/r/tut-XPath_1.html#Pages~List_of_XPaths)
 * [Selectors](https://docs.scrapy.org/en/latest/topics/selectors.html#topics-selectors)
+* [Xpath Mozila 🔥](https://developer.mozilla.org/en-US/docs/Web/XPath)
 
 Take this site for practice [quotes.toscrape.com](https://quotes.toscrape.com/)
 
@@ -28,5 +29,120 @@ For More Example this path is start from the `HTML`. Try this in the `quotes.tos
 </details>
 
 <details>
-   <summary><b>XPath as filesystem addressing</b></summary>
+   <summary><b>Start with <code>//</code></b></summary>
+
+   If the path starts with `//` then all elements in the document which fulfill the following criteria are selected.
+```
+//BBB
+//DDD/BBB
+```
+```
+//body//div
+```
 </details>
+
+
+<details>
+   <summary><b>All elements: <code>*</code></b></summary>
+
+   The star * selects all elements located by preceding path
+```
+/AAA/CCC/DDD/*
+/*/*/*/BBB
+//*
+```
+</details>
+
+
+
+<details>
+   <summary><b>Further conditions inside <code>[]</code></b></summary>
+
+   Expression in square brackets can further specify an element. A number in the brackets gives the position of the element in the selected set. The function `last()` selects the last element in the selection.
+```
+/AAA/BBB[1]
+/AAA/BBB[last()]
+```
+</details>
+
+
+<details>
+   <summary><b>Attributes</b></summary>
+
+   Attributes are specified by `@` prefix.
+```
+//@id
+//BBB[@id]
+//BBB[@name]
+//BBB[@*]
+//BBB[not(@*)]
+```
+</details>
+
+
+<details>
+   <summary><b>Attribute values</b></summary>
+
+   Values of attributes can be used as selection criteria. Function normalize-space removes leading and trailing spaces and replaces sequences of whitespace characters by a single space.
+
+```
+//BBB[@id='b1']
+//BBB[@name='bbb']
+//BBB[normalize-space(@name)='bbb']
+```
+</details>
+
+
+
+<details>
+   <summary><b>Nodes counting</b></summary>
+
+   Function `count()` counts the number of selected elements
+```
+//*[count(BBB)=2]
+//*[count(*)=2]
+//*[count(*)=3]
+```
+
+</details>
+
+
+<details>
+   <summary><b>Playing with names of selected elements</b></summary>
+
+   The string-length function returns the number of characters in the string. You must use &lt; as a substitute for < and &gt; as a substitute for > .
+```
+//*[string-length(name()) = 3]
+//*[string-length(name()) < 3]
+//*[string-length(name()) > 3]
+```
+</details>
+
+
+<details>
+   <summary><b>Start with //</b></summary>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
