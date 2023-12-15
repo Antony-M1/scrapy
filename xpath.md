@@ -4,3 +4,7 @@
 
 While perhaps not as popular as CSS selectors, XPath expressions offer more power because besides navigating the structure, it can also look at the content. Using XPath, you’re able to select things like: select the link that contains the text `Next Page`. This makes XPath very fitting to the task of scraping, and we encourage you to learn XPath even if you already know how to construct CSS selectors, it will make scraping much easier.
 
+## Reference Document:
+* [Learn XPath through examples](http://zvon.org/comp/r/tut-XPath_1.html)
+    * [List of Xpath](http://zvon.org/comp/r/tut-XPath_1.html#Pages~List_of_XPaths)
+* [Selectors](https://docs.scrapy.org/en/latest/topics/selectors.html#topics-selectors)
