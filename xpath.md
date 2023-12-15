@@ -110,7 +110,19 @@ For More Example this path is start from the `HTML`. Try this in the `quotes.tos
 <details>
    <summary><b>Playing with names of selected elements</b></summary>
 
-   The string-length function returns the number of characters in the string. You must use &lt; as a substitute for < and &gt; as a substitute for > .
+Function `name()` returns `name` of the `element`, the `starts-with` function returns true if the first argument string starts with the second argument string, and the `contains` function returns true if the first argument string contains the second argument string.
+```
+//*[name()='BBB']
+//*[starts-with(name(),'B')]
+//*[contains(name(),'C')]
+```
+</details>
+
+
+<details>
+   <summary><b>Length of string</b></summary>
+
+   The `string-length` function returns the number of characters in the string. You must use &lt; as a substitute for < and &gt; as a substitute for > .
 ```
 //*[string-length(name()) = 3]
 //*[string-length(name()) < 3]
@@ -120,11 +132,18 @@ For More Example this path is start from the `HTML`. Try this in the `quotes.tos
 
 
 <details>
-   <summary><b>Start with //</b></summary>
+   <summary><b>Combining XPaths with <code>|</code></b></summary>
+
+   Several paths can be combined with | separator.
+   ```
+//CCC | //BBB
+/AAA/EEE | //BBB
+/AAA/EEE | //DDD/CCC | /AAA | //BBB
+```
 </details>
 
 
-
+For more documents please refere the [Referencce Document Section](#)
 
 
 
