@@ -8,3 +8,25 @@ While perhaps not as popular as CSS selectors, XPath expressions offer more powe
 * [Learn XPath through examples](http://zvon.org/comp/r/tut-XPath_1.html)
     * [List of Xpath](http://zvon.org/comp/r/tut-XPath_1.html#Pages~List_of_XPaths)
 * [Selectors](https://docs.scrapy.org/en/latest/topics/selectors.html#topics-selectors)
+
+Take this site for practice [quotes.toscrape.com](https://quotes.toscrape.com/)
+
+## List Of XPath
+<details>
+   <summary><b>XPath as filesystem addressing</b></summary>
+
+   The basic XPath syntax is similar to filesystem addressing. If the path starts with the slash `/` , then it represents an   `absolute path` to the required element.
+```
+/AAA
+/AAA/CCC
+/AAA/DDD/BBB
+```
+For More Example this path is start from the `HTML`. Try this in the `quotes.toscrape.com` site.
+```
+/html/body/div/div[2]/div/div[6]
+```
+</details>
+
+<details>
+   <summary><b>XPath as filesystem addressing</b></summary>
+</details>
