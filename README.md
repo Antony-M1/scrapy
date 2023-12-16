@@ -52,4 +52,5 @@ Past this in `.vscode/launch.json` file
 * [Commands](https://github.com/Antony-M1/scrapy/blob/main/commands.md)
 * [Spider](https://github.com/Antony-M1/scrapy/blob/main/spider.md)
 * [Regex](https://github.com/Antony-M1/scrapy/blob/main/regular_expressions.md)
+* [XPath](https://github.com/Antony-M1/scrapy/blob/main/xpath.md)
 
