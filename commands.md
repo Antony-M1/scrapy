@@ -276,8 +276,11 @@ Options
 </details>
 
 
+<details>
+  <summary><b>scrapy list</b></summary>
 
-
+  List all the spiders present in the project
+</details>
 
 
 
