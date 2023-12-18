@@ -298,3 +298,60 @@ Options
 ```
 </details>
 
+
+<details>
+   <summary><b>scrapy edit</b></summary>
+
+  Edit a spider using the editor defined in the `EDITOR` environment variable or else the `EDITOR` setting
+</details>
+
+
+<details>
+   <summary><b>scrapy parse</b></summary>
+
+  Parse URL (using its spider) and print the results
+
+**Options**
+```
+
+  -h, --help            show this help message and exit
+  -a NAME=VALUE         set spider argument (may be repeated)
+  -o FILE, --output FILE
+                        append scraped items to the end of FILE (use - for stdout), to define format set a colon at
+                        the end of the output URI (i.e. -o FILE:FORMAT)
+  -O FILE, --overwrite-output FILE
+                        dump scraped items into FILE, overwriting any existing file, to define format set a colon at
+                        the end of the output URI (i.e. -O FILE:FORMAT)
+  -t FORMAT, --output-format FORMAT
+                        format to use for dumping items
+  --spider SPIDER       use this spider without looking for one
+  --pipelines           process items through pipelines
+  --nolinks             don't show links to follow (extracted requests)
+  --noitems             don't show scraped items
+  --nocolour            avoid using pygments to colorize the output
+  -r, --rules           use CrawlSpider rules to discover the callback
+  -c CALLBACK, --callback CALLBACK
+                        use this callback for parsing, instead looking for a callback
+  -m META, --meta META  inject extra meta into the Request, it must be a valid raw json string
+  --cbkwargs CBKWARGS   inject extra callback kwargs into the Request, it must be a valid raw json string
+  -d DEPTH, --depth DEPTH
+                        maximum depth for parsing requests [default: 1]
+  -v, --verbose         print each depth level one by one
+```
+</details>
+
+
+<details>
+   <summary><b>scrapy bench</b></summary>
+
+Run quick benchmark test
+</details>
+
+
+
+
+
+
+
+
+
