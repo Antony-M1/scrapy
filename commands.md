@@ -3,6 +3,8 @@ We are going to see the **scrapy** commands and use them.
 
 Ideally, The `Scrapy` commands start with the prefix of **scrapy** & the Common Function which means **Help** command `--help` pass this argument and get help
 
+* [Available tool commands](https://docs.scrapy.org/en/latest/topics/commands.html#available-tool-commands)
+
 ```
 scrapy --help
 ```
@@ -283,5 +285,16 @@ Options
 </details>
 
 
+<details>
+  <summary><b>scrapy check</b></summary>
 
+  Check spider contracts
+
+**Options**
+```
+  -h, --help            show this help message and exit
+  -l, --list            only list contracts, without checking them
+  -v, --verbose         print contract tests for all spiders
+```
+</details>
 
