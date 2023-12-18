@@ -54,3 +54,5 @@ Past this in `.vscode/launch.json` file
 * [Regex](https://github.com/Antony-M1/scrapy/blob/main/regular_expressions.md)
 * [XPath](https://github.com/Antony-M1/scrapy/blob/main/xpath.md)
 
+# Deployment
+* [scrapyd-deploy](https://scrapyd.readthedocs.io/en/latest/deploy.html)
