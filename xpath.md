@@ -9,6 +9,8 @@ While perhaps not as popular as CSS selectors, XPath expressions offer more powe
 ## Special Characters
 * `/` : Select the `children` from the node set on the left side of this character.
 * `//` : Specifies that the matching node set should be located `at any level` within the document.
+* `.` : Specifies the count context should be used (refers to `present` node)
+* `..` : Refers to a `parent` node.
 
 ## Reference Document:
 * [Learn XPath through examples](http://zvon.org/comp/r/tut-XPath_1.html)
